@@ -6,10 +6,10 @@ title: Etude pétro-stratigraphique et tectonique du flanc nord de la Valle del 
 subtitle: ''
 summary: ''
 authors:
-- n̆derline\textbfS. Valade
+- Sébastien Valade
 tags: []
 categories: []
-date: '2006-01-01'
+date: '2006-06-01'
 lastmod: 2023-02-03T15:38:08-06:00
 featured: false
 draft: false

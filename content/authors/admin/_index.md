@@ -58,9 +58,15 @@ social:
     label: MountsSystem
     display:
       header: true
-  - icon: graduation-cap # Alternatively, use `google-scholar` icon from `ai` icon pack
-    icon_pack: fas
+  - icon: google-scholar
+    icon_pack: ai
     link: https://scholar.google.it/citations?user=mE8XZU8AAAAJ&hl=en
+  - icon: researchgate
+    icon_pack: ai
+    link: https://www.researchgate.net/profile/Sebastien-Valade
+  - icon: scopus
+    icon_pack: ai
+    link: https://www.scopus.com/authid/detail.uri?authorId=53867232900
   - icon: github
     icon_pack: fab
     link: https://github.com/svalade

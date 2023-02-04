@@ -19,10 +19,8 @@ sections:
     id: publications
     content:
       title: Publications
-      text: <h2><b>Latest Publications</b></h2>
-        {{% callout note %}}
-        Quickly discover relevant content by [filtering publications](./publication/).
-        {{% /callout %}}
+      text: <h2><b><u>All Publications</u>:</b><br><a href="./publication/" _target="_blank">View / filter all academic publications</a></h2><br>
+        <h2><b><u>Latest Publications</u>:</b></h2>
       filters:
         folders:
           - publication
