@@ -4,7 +4,7 @@ authors: ['Sébastien Valade', 'M. Cerminara']
 title: "Reconstruction of Volcanic Plume Properties Through Integration of Infrared Imagery and Analytical One-dimensional Models"
 event: IAVCEI General Assembly 2013
 event_url: http://www.kazan.or.jp/iavcei2013/
-location: None
+location: False
 address:
   city: Kagoshima
   country: Japan

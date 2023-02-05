@@ -3,8 +3,8 @@ type: poster
 authors: ['Sébastien Valade', 'F. Donnadieu', 'C. Valdes Gonzales', 'E. Guevara Ortiz']
 title: "Ground-based Doppler radar monitoring of ash plumes at Popocatépetl volcano"
 event: IAVCEI General Assembly 2008
-event_url: None
-location: None
+event_url: False
+location: False
 address:
   city: Reykjavik
   country: Iceland

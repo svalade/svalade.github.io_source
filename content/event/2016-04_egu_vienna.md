@@ -4,7 +4,7 @@ authors: ['R. Genco', 'Sébastien Valade', 'N. Villeneuve', 'A. Peltier', 'V. Fe
 title: "Infrasound of basaltic effusive activity at Piton de la Fournaise Volcano"
 event: EGU General Assembly 2016
 event_url: https://www.egu2016.eu/
-location: 
+location: False
 address:
   city: Vienna
   country: Austria

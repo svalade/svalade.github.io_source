@@ -4,7 +4,7 @@ authors: ['Sébastien Valade', 'M. Ripepe', 'G. Ulivieri', 'E. Marchetti']
 title: "Evolution of eruption dynamics during ash-rich lava fountaining episodes revealed by infrasonic monitoring"
 event: Cities on Volcanoes 8
 event_url: https://www.iavceivolcano.org/event/cities-on-volcanoes-8/
-location: None
+location: False
 address:
   city: Yogyakarta
   country: Indonesia

@@ -4,7 +4,7 @@ authors: ['Sébastien Valade', 'A. Harris', 'G. Sawyer', 'F. Donnadieu', 'P. Lab
 title: "Full bandwidth remote sensing for total parameterization of volcanic plumes"
 event: IAVCEI General Assembly 2013
 event_url: http://www.kazan.or.jp/iavcei2013/
-location: None
+location: False
 address:
   city: Kagoshima
   country: Japan

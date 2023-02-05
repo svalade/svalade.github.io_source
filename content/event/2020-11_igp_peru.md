@@ -7,7 +7,7 @@ event: International Conference "Erupciones Volcánica - Estrategias para la pre
 event_url: https://www.igp.gob.pe/eventos/internacional/2020/erupciones_volcanicas/index.php
 location: IGP (Instituto Geofísico del Perú)
 address:
-  city: Lima
+  city: online
   country: Perú
 date: 2020-11-04
 date_end: 2020-11-06

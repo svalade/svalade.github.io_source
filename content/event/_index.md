@@ -2,7 +2,7 @@
 # NB: this controls the "archive page" (accessed when pressing SEE ALL)
 # https://wowchemy.com/docs/content/archives/
 
-title: Talks & Poster in international conferences
+title: Talks #& Posters in international conferences
 cms_exclude: true
 
 # View.

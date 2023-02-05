@@ -3,8 +3,8 @@ type: talk
 authors: ["O. D'Hondt", 'Sébastien Valade', 'O. Hellwich']
 title: "Nonlocal filtering of polarimetric SAR images applied to change detection for volcano monitoring"
 event: ESA POLINSAR
-event_url: None
-location: 
+event_url: https://polinsar2019.esa.int/
+location: False
 address:
   city: Frascati
   country: Italy

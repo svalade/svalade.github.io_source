@@ -4,7 +4,7 @@ authors: ['Sébastien Valade']
 title: "Volcanic hazard monitoring from space using MOUNTS"
 event: 90° Congresso della Società Geologica Italiana
 event_url: https://www.socgeol.it/N3828/geology-without-borders-90-congresso-della-societa-geologica-italiana.html
-location: 
+location: False
 address:
   city: Trieste
   country: Italy

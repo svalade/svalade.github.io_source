@@ -4,7 +4,7 @@ authors: ['Sébastien Valade', 'et. al']
 title: "Internal dynamics and eruptive behaviour of Stromboli volcano: insights from the 2014 eruption"
 event: EGU General Assembly 2015
 event_url: https://www.egu2015.eu/
-location: None
+location: False
 address:
   city: Vienna
   country: Austria

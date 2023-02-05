@@ -30,7 +30,9 @@
   {{ end }}
   
   <!-- location -->
-  {{ $item.Params.Location }}, 
+  {{ if $item.Params.Location }}
+      {{ $item.Params.Location }}, 
+  {{ end }}
 
   <!-- city (country) -->
   {{ $item.Params.Address.City }} ({{ $item.Params.Address.Country }}), 
