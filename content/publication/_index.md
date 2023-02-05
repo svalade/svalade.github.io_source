@@ -1,5 +1,8 @@
 ---
-title: Publications
+# NB: this controls the "archive page" (accessed when pressing SEE ALL)
+# https://wowchemy.com/docs/content/archives/
+
+title: Peer-reviewed publications
 cms_exclude: true
 
 # View.
@@ -8,7 +11,6 @@ cms_exclude: true
 #   3 = Card
 #   4 = Citation
 view: 4 
-#NB: seems this is controlled in /contents/_index.md > block publications > design > view: citation
 
 # Optional header image (relative to `static/media/` folder).
 header:

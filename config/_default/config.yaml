@@ -73,3 +73,23 @@ sitemap:
   _merge: deep
 minify:
   _merge: deep
+
+# SV edit: cascade will apply settings to content type (unless settings explicitely specified in index.md of the event)
+cascade:
+  # Configure publications
+  - _target:
+      path: /publication/**
+    share: false          # Show social sharing links?
+  # Configure talks
+  # NB: check out https://academic-demo.netlify.app/ for demo of full capabilities
+  - _target:
+      path: /event/**
+    share: false          # Show social sharing links?
+    commentable: false    # Allow users to comment on the page?
+    editable: false       # Allow visitors to make improvements to the page?
+    pager: false          # Show a link to the next article in the series?
+    show_related: false   # Show recommendations for related content?
+    show_breadcrumb: true # Show breadcrumb navigation?
+    header:
+      navbar:
+        enable: true      # Hide the navigation bar?

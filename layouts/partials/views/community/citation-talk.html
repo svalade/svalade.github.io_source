@@ -1,0 +1,50 @@
+{{ $item := .item }}
+{{ $has_attachments := partial "functions/has_attachments" $item }}
+
+<div class="pub-list-item view-citation" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  <!-- type -->
+  {{ if $item.Params.highlight }}
+    <span style="color:#900603">[<u>{{ $item.Params.type }}</u>]</span>
+  {{ else }}
+      [{{ $item.Params.type }}]
+  {{ end }}
+
+  <!-- author -->
+  <span class="article-metadata li-cite-author">
+    {{ partial "page_metadata_authors" $item }}
+  </span>
+
+  <!-- date -->
+  ({{- $item.Date.Format "2006" -}})
+  
+  <!-- title -->
+  <i>"{{ $item.Title }}"</i>, 
+  
+  <!-- event -->
+  {{ if $item.Params.Event_url }}
+  <a href="{{ $item.Params.Event_url }}" _target="blank">{{ $item.Params.Event }}</a>, 
+  {{ else }}
+  {{ $item.Params.Event }},  
+  {{ end }}
+  
+  <!-- location -->
+  {{ $item.Params.Location }}, 
+
+  <!-- city (country) -->
+  {{ $item.Params.Address.City }} ({{ $item.Params.Address.Country }}), 
+  
+  <!-- date -->
+  <span>
+    {{ partial "functions/get_event_dates" $item }}
+  </span>
+  
+  {{ if $item.Params.publication_short }}
+    {{- $item.Params.publication_short | markdownify -}}.
+  {{ else if $item.Params.publication }}
+    {{- $item.Params.publication | markdownify -}}.
+  {{ end }}
+  <p>{{ partial "page_links" (dict "page" $item "is_list" 1) }}</p>
+
+</div>

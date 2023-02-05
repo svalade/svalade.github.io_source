@@ -86,5 +86,5 @@ email: ''
 highlight_name: true
 ---
 
-Sébastien Valade is a Associate Professor in the Department of Volcanology in the Institute of Geofisics at UNAM (Universidad Nacional Autónoma de México, Mexico City). He is the founder and developer of the volcano monitoring system MOUNTS (Monitoring Unrest from Space, [www.mounts-project.com](www.mounts-project.com)).
+Sébastien Valade is Associate Professor in the Department of Volcanology in the Institute of Geofisics at UNAM (Universidad Nacional Autónoma de México, Mexico City). He is the founder and developer of the volcano monitoring system MOUNTS (Monitoring Unrest from Space, [www.mounts-project.com](www.mounts-project.com)).
 {style="text-align: justify;"}

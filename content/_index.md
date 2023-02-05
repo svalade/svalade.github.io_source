@@ -15,6 +15,7 @@ sections:
     design:
       spacing:
         padding: ["10px", "0", "20px", "0"] # section spacing top, right, bottom, left
+
   - block: collection
     id: publications
     content:
@@ -30,6 +31,21 @@ sections:
       view: citation
       spacing:
         padding: ["20px", "0", "20px", "0"] # section spacing top, right, bottom, left
+
+  - block: collection
+    id: talks
+    content:
+      title: Talks
+      text: <h2><b><u>All Talks</u>:</b><br><a href="./event/" _target="_blank">View all talks/posters</a></h2><h2><b><u>Latest Talks</u>:</b></h2>
+      filters:
+        folders:
+          - event
+    design:
+      columns: '2'
+      view: community/citation-talk
+      spacing:
+        padding: ["20px", "0", "20px", "0"] # section spacing top, right, bottom, left
+
   - block: contact
     id: contact
     content:
