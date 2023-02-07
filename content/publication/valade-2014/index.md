@@ -44,4 +44,5 @@ doi: 10.1016/j.cageo.2013.12.015
 links:
 - name: URL
   url: http://dx.doi.org/10.1016/j.cageo.2013.12.015
+url_code: https://github.com/sebastienValade/PlumeAscentTracker
 ---
