@@ -39,4 +39,6 @@ publication_types:
 abstract: ''
 publication: '*IGARSS 2020 - IEEE International Geoscience and Remote Sensing Symposium*'
 doi: 10.1109/IGARSS39084.2020.9323293
+
+url_code: https://github.com/tim-dav/cnn-sar-despeckle
 ---
