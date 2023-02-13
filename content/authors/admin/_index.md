@@ -26,22 +26,27 @@ bio: My research interests include volcano eruptive processes.
 
 # Interests to show in About widget
 interests:
-  - Volcanic eruption dynamics
-  - Satellite-based observation of volcanic activity
-  - Ground-based geophysical observation of volcanic activity (infrared imagery, infrasound array)
-  - Machine- and Deep-Learning applied to volcanology
+  - volcanic eruption dynamics
+  # - Satellite-based observation of volcanic activity
+  # - Ground-based geophysical observation of volcanic activity (infrared imagery, infrasound array)
+  - ground- & satellite-based observation of volcanic activity
+  - machine- & deep-learning applied to volcanology
 
 # Education to show in About widget
 education:
   courses:
-    - course: PhD in Artificial Intelligence
-      institution: Stanford University
+    # - course: PhD in Earth Sciences (volcanology/geophysics)
+    - course: PhD in Volcanology/Geophysics
+      institution: University Clermont-Auvergne - LMV (France)
       year: 2012
-    - course: MEng in Artificial Intelligence
-      institution: Massachusetts Institute of Technology
-      year: 2009
-    - course: BSc in Artificial Intelligence
-      institution: Massachusetts Institute of Technology
+    - course: MSc degree in Volcanology
+      institution: University Clermont-Auvergne - LMV (France)
+      year: 2008
+    - course: Engineer degree in geosciences
+      institution: UniLasalle (France)
+      year: 2008
+    - course: BSc degree in geological sciences
+      institution: Institut Géologique Albert-Lapparent, now UniLasalle (France)
       year: 2008
 
 # Social/Academic Networking
@@ -49,24 +54,24 @@ education:
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
 #   form "mailto:your-email@example.com" or "/#contact" for contact widget.
 social:
-  - icon: envelope
-    icon_pack: fas
-    link: '/#contact'
+  # - icon: envelope
+  #   icon_pack: fas
+  #   link: '/#contact'
+  - icon: google-scholar
+    icon_pack: ai
+    link: https://scholar.google.it/citations?user=mE8XZU8AAAAJ&hl=en
+  - icon: scopus
+    icon_pack: ai
+    link: https://www.scopus.com/authid/detail.uri?authorId=53867232900
+  - icon: researchgate
+    icon_pack: ai
+    link: https://www.researchgate.net/profile/Sebastien-Valade
   - icon: twitter
     icon_pack: fab
     link: https://twitter.com/MountsSystem
     label: MountsSystem
     display:
-      header: true
-  - icon: google-scholar
-    icon_pack: ai
-    link: https://scholar.google.it/citations?user=mE8XZU8AAAAJ&hl=en
-  - icon: researchgate
-    icon_pack: ai
-    link: https://www.researchgate.net/profile/Sebastien-Valade
-  - icon: scopus
-    icon_pack: ai
-    link: https://www.scopus.com/authid/detail.uri?authorId=53867232900
+      header: false #>> display logo in header
   - icon: github
     icon_pack: fab
     link: https://github.com/svalade
@@ -74,10 +79,9 @@ social:
     icon_pack: fab
     link: https://gitlab.com/svalade
   # Link to a PDF of your resume/CV.
-  # To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.yaml`, and uncomment the lines below.
-  - icon: cv
-    icon_pack: ai
-    link: uploads/resume.pdf
+  # - icon: cv
+  #   icon_pack: ai
+  #   link: uploads/resume.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: ''
@@ -86,5 +90,5 @@ email: ''
 highlight_name: true
 ---
 
-Sébastien Valade is Associate Professor in the Department of Volcanology in the Institute of Geofisics at UNAM (Universidad Nacional Autónoma de México, Mexico City). He is the founder and developer of the volcano monitoring system MOUNTS (Monitoring Unrest from Space, [www.mounts-project.com](www.mounts-project.com)).
+**Sébastien Valade** is Associate Professor in the [Department of Volcanology](http://vulcanologia.geofisica.unam.mx/) in the [Institute of Geophysics](https://www.geofisica.unam.mx/) at UNAM (Universidad Nacional Autónoma de México, Mexico City). He is the founder and developer of the volcano monitoring system MOUNTS (Monitoring Unrest from Space, [www.mounts-project.com](www.mounts-project.com)).
 {style="text-align: justify;"}

@@ -37,4 +37,6 @@ doi: 10.1029/2011GL049415
 links:
 - name: URL
   url: http://www.agu.org/pubs/crossref/2011/2011GL049415.shtml
+- name: GRL cover
+  url: uploads/GRL-cover_Valade-Donnadieu-2011.pdf
 ---

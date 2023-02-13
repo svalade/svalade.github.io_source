@@ -5,7 +5,9 @@ date: 2023-02-01
 type: landing
 
 sections:
-  - block: about.avatar
+  # - block: about.avatar
+  # - block: v1/about
+  - block: v1/about-custom
     id: about
     content:
       # Choose a user profile to display (a folder name within `content/authors/`)
@@ -14,13 +16,13 @@ sections:
       text:  
     design:
       spacing:
-        padding: ["10px", "0", "20px", "0"] # section spacing top, right, bottom, left
+        padding: ["2%", "5%", "20px", "2%"] # section spacing top, right, bottom, left
 
   - block: collection
     id: publications
     content:
       title: Publications
-      text: <h2><b><u>All Publications</u>:</b><br><a href="./publication/" _target="_blank">View / filter all academic publications</a></h2><br>
+      text: <h2><b><u>All Publications</u>:</b><br><a href="./publication/" _target="_blank">View / filter all 34 academic publications</a></h2><br>
         <h2><b><u>Latest Publications</u>:</b></h2>
       filters:
         folders:
@@ -30,7 +32,7 @@ sections:
       columns: '2'
       view: citation
       spacing:
-        padding: ["20px", "0", "20px", "0"] # section spacing top, right, bottom, left
+        padding: ["20px", "5%", "20px", "2%"] # section spacing top, right, bottom, left
 
   - block: collection
     id: talks
@@ -39,12 +41,41 @@ sections:
       text: <h2><b><u>All Talks</u>:</b><br><a href="./event/" _target="_blank">View all talks/posters</a></h2><h2><b><u>Latest Talks</u>:</b></h2>
       filters:
         folders:
-          - event
+          - talk
     design:
       columns: '2'
       view: community/citation-talk
       spacing:
-        padding: ["20px", "0", "20px", "0"] # section spacing top, right, bottom, left
+        padding: ["20px", "5%", "20px", "2%"] # section spacing top, right, bottom, left
+
+  - block: collection
+    id: lectures
+    content:
+      title: Lectures
+      subtitle: ''
+      text: ''
+      count: 0  # how many pages to display (0 = all pages)
+      # Filter on criteria
+      filters:
+        folders:
+          - lectures
+        author: ""
+        category: ""
+        tag: ""
+        exclude_featured: false
+        exclude_future: false
+        exclude_past: false
+        publication_type: ""
+      # Choose how many pages you would like to offset by
+      offset: 0
+      # Page order: descending (desc) or ascending (asc) date.
+      order: desc
+    design:
+      # Choose a layout view
+      view: compact
+      columns: '2'
+      spacing:
+        padding: ["20px", "5%", "20px", "2%"] # section spacing top, right, bottom, left
 
   - block: contact
     id: contact
@@ -70,5 +101,5 @@ sections:
     design:
       columns: '2'
       spacing:
-        padding: ["20px", "0", "0", "0"] # section spacing top, right, bottom, left
+        padding: ["20px", "5%", "0", "2%"] # section spacing top, right, bottom, left
 ---

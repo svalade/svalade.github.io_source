@@ -1,6 +1,8 @@
 # Theme metadata
 name = "my_theme"
 
+# checkout https://coolors.co/generate
+
 [light]
   # Primary
   primary = "#284f7a"
@@ -16,22 +18,23 @@ name = "my_theme"
   home_section_even = "rgb(247, 247, 247)"
 
   link = "#284f7a"
-  link_hover = "#264A33"
+  link_hover = "#284f7a"
 
 [dark]
+# vscode default colors: https://gist.github.com/javifm86/073d8e05942a8849dd11fa6996955fc0
   # Primary
-  primary = "#F3B26D"
-#  text = "#8342a8"
+  primary = "#93B7BE"
+#  text = "#FFFFFF"
 #  link_decoration = "underline"
 
-  menu_primary = "#0E182E"
-  menu_text_active = "#F3B26D"
+  menu_primary = "#1e1e1e"
+  menu_text_active = "#007fd4"
 
-  background = "#1C2945"
+  background = "#141414"
 
   # Home sections
-  home_section_odd = "#1C2945"
-  home_section_even = "#0E182E"
+  home_section_odd = "#1e1e1e"
+  home_section_even = "#2a2d2e"
 
-  link = "#bbdefb"
-  link_hover = "#bbdefb"
+  link = "#007fd4"
+  link_hover = "#007fd4"

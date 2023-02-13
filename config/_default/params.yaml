@@ -4,15 +4,13 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 # Appearance
-
 appearance:
   theme_day: custom_theme
   theme_night: custom_theme
   font: custom_font
-  font_size: M
+  font_size: S
 
 # SEO
-
 marketing:
   seo:
     site_type: Person
@@ -28,19 +26,17 @@ marketing:
     baidu: ''
 
 # Site header
-
 header:
   navbar:
     enable: true
     align: l
-    show_logo: true
+    show_logo: false
     show_language: false
-    show_day_night: false
+    show_day_night: true
     show_search: false
     highlight_active_link: true
 
 # Site footer
-
 footer:
   copyright:
     notice: '© {year} Sébastien Valade. This work is licensed under {license}'
@@ -51,14 +47,12 @@ footer:
       allow_commercial: false
 
 # Localization
-
 locale:
   date_format: 'Jan 2, 2006'
   time_format: '3:04 PM'
   address_format: en-us
 
 # Site features
-
 features:
   syntax_highlighter:
     theme_light: github-light
@@ -99,7 +93,6 @@ features:
     zoom: 15
 
 # Extensions
-
 extensions:
   cms:
     branch: main
@@ -108,7 +101,6 @@ extensions:
     enable: true
 
 # Security
-
 security:
   # Allow frame for embedding speaker notes in slides
   allow_frame: true
