@@ -96,10 +96,10 @@ sections:
           icon_pack: fab
           name: Mounts System
           link: 'https://twitter.com/MountsSystem'
-      # Automatically link email and phone or display as text?
-      autolink: true
+      autolink: true  # Automatically link email and phone or display as text?
     design:
       columns: '2'
       spacing:
-        padding: ["20px", "5%", "0", "2%"] # section spacing top, right, bottom, left
+        # NB: leave bottom spacing after last section, so that menu section higlight works
+        padding: ["20px", "5%", "175px", "2%"] #section spacing top, right, bottom, left
 ---

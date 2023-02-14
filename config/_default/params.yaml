@@ -26,6 +26,7 @@ marketing:
     baidu: ''
 
 # Site header
+# NB: to add networking icon (e.g., twitter) => content/authors/admin/_index.md > icon: twitter > display > header: true
 header:
   navbar:
     enable: true
