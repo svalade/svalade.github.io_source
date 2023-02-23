@@ -77,6 +77,36 @@ sections:
       spacing:
         padding: ["20px", "5%", "20px", "2%"] # section spacing top, right, bottom, left
 
+  - block: collection
+    id: projects
+    content:
+      title: Funded projects
+      subtitle: ''
+      text: ''
+      count: 0  # how many pages to display (0 = all pages)
+      # Filter on criteria
+      filters:
+        folders:
+          - projects
+        author: ""
+        category: ""
+        tag: ""
+        exclude_featured: false
+        exclude_future: false
+        exclude_past: false
+        publication_type: ""
+      # Choose how many pages you would like to offset by
+      offset: 0
+      # Page order: descending (desc) or ascending (asc) date.
+      order: desc
+    design:
+      # Choose a layout view
+      # view: compact
+      view: community/compact-project
+      columns: '2'
+      spacing:
+        padding: ["20px", "5%", "20px", "2%"] # section spacing top, right, bottom, left
+
   - block: contact
     id: contact
     content:
@@ -101,5 +131,5 @@ sections:
       columns: '2'
       spacing:
         # NB: leave bottom spacing after last section, so that menu section higlight works
-        padding: ["20px", "5%", "175px", "2%"] #section spacing top, right, bottom, left
+        padding: ["20px", "5%", "250px", "2%"] #section spacing top, right, bottom, left
 ---

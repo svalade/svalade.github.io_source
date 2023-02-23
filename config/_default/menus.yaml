@@ -15,6 +15,9 @@ main:
     weight: 21
   - name: Lectures
     url: '#lectures'
+    weight: 25
+  - name: Projects
+    url: '#projects'
     weight: 30
   - name: Contact
     url: '#contact'

@@ -80,11 +80,25 @@ cascade:
   - _target:
       path: /publication/**
     share: false          # Show social sharing links?
+    profile: false        # Show author profile (photo and bio) under the content?
   # Configure talks
   # NB: check out https://academic-demo.netlify.app/ for demo of full capabilities
   - _target:
       path: /event/**
     share: false          # Show social sharing links?
+    profile: false        # Show author profile (photo and bio) under the content?
+    commentable: false    # Allow users to comment on the page?
+    editable: false       # Allow visitors to make improvements to the page?
+    pager: false          # Show a link to the next article in the series?
+    show_related: false   # Show recommendations for related content?
+    show_breadcrumb: true # Show breadcrumb navigation?
+    header:
+      navbar:
+        enable: true      # Hide the navigation bar?
+  - _target:
+      path: /projects/**
+    share: false          # Show social sharing links?
+    profile: false        # Show author profile (photo and bio) under the content?
     commentable: false    # Allow users to comment on the page?
     editable: false       # Allow visitors to make improvements to the page?
     pager: false          # Show a link to the next article in the series?

@@ -1,5 +1,5 @@
 ---
-title: "Computer Vision for Geosciences: from classical methods to modern approaches using Deep Learning."
+title: "Computer Vision for Geosciences: from classical methods to modern approaches using Deep Learning"
 subtitle: CV4GS
 summary: This class is a general introduction to computer vision methods relevant in geoscience. It teaches classical computer vision methods and machine learning based techniques. It was taught at UNAM in 2021.
 authors:
