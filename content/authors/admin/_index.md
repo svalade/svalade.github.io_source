@@ -33,6 +33,7 @@ interests:
   - machine- & deep-learning applied to volcanology
 
 # Education to show in About widget
+# NB: disabled in about-custom.html, in favor of work positions
 education:
   courses:
     # - course: PhD in Earth Sciences (volcanology/geophysics)
@@ -48,6 +49,31 @@ education:
     - course: BSc degree in geological sciences
       institution: Institut Géologique Albert-Lapparent, now UniLasalle (France)
       year: 2008
+
+# CUSTOM work position to show in About-custom widget
+work:
+  positions:
+    - position: Associate Researcher/Professor
+      institution: 
+        - UNAM (Mexico), [Dept. of Volcanology](http://vulcanologia.geofisica.unam.mx/)
+      year: since 2020
+    - position: PostDoc fellowship
+      institution: 
+        - TUB (Germany), [Dept. of Computer Vision & Remote Sensing](https://www.tu.berlin/en/cv)
+        - GFZ (Germany), Volcanic Hazards Team
+      year: 2017-2019
+    - position: PostDoc fellowship
+      institution: 
+        - UNIFI (Italy), [Laboratorio di Geofisica Sperimentale LGS](http://lgs.geo.unifi.it/)
+      year: 2013-2017
+    - position: PostDoc fellowship
+      institution: 
+        - UCA (France), [Laboratoire Magmas et Volcans LMV](https://lmv.uca.fr/en/)
+      year: 2012-2013
+    - position: PhD candidate
+      institution: 
+        - UCA (France), [Laboratoire Magmas et Volcans LMV](https://lmv.uca.fr/en/)
+      year: 2008-2011
 
 # Social/Academic Networking
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
