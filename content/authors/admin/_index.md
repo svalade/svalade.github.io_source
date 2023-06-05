@@ -30,6 +30,8 @@ interests:
   # - Satellite-based observation of volcanic activity
   # - Ground-based geophysical observation of volcanic activity (infrared imagery, infrasound array)
   - ground- & satellite-based observation of volcanic activity
+  # - computer vision & artificial intelligence (machine learning & deep learning) applied to volcanology
+  - computer vision
   - machine- & deep-learning applied to volcanology
 
 # Education to show in About widget
