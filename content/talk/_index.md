@@ -10,7 +10,7 @@ cms_exclude: true
 #   2 = Compact
 #   3 = Card
 #   4 = Citation
-view: community/citation-talk 
+view: custom/citation-talk 
 
 # Optional header image (relative to `static/media/` folder).
 header:

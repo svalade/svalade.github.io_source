@@ -44,7 +44,7 @@ sections:
           - talk
     design:
       columns: '2'
-      view: community/citation-talk
+      view: custom/citation-talk
       spacing:
         padding: ["20px", "5%", "20px", "2%"] # section spacing top, right, bottom, left
 
@@ -102,7 +102,7 @@ sections:
     design:
       # Choose a layout view
       # view: compact
-      view: community/compact-project
+      view: custom/compact-project
       columns: '2'
       spacing:
         padding: ["20px", "5%", "20px", "2%"] # section spacing top, right, bottom, left
