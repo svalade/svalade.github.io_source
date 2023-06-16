@@ -1,0 +1,215 @@
+{{/* Wowchemy Blocks: Collection */}}
+{{/* Documentation: https://wowchemy.com/blocks/ */}}
+{{/* License: https://github.com/wowchemy/wowchemy-hugo-themes/blob/main/LICENSE.md */}}
+
+{{/* Initialise */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+
+<!-- QUERY BLOCK CONTENT PART 1 -->
+{{ $items_offset := $block.content1.offset | default 0 }}
+{{ $items_count := $block.content1.count }}
+{{ if eq $items_count 0 }}
+  {{ $items_count = 65535 }}
+{{ else }}
+  {{ $items_count = $items_count | default 5 }}
+{{ end }}
+
+{{/* Query */}}
+{{ $query := site.RegularPages }}
+{{ $archive_page := "" }}
+
+{{/* Filters */}}
+{{ if $block.content1.page_type }}
+  {{ $query = where $query "Type" $block.content1.page_type }}
+  {{ $archive_page = site.GetPage "Section" $block.content1.page_type }}
+{{ end }}
+{{ if $block.content1.filters.folders }}
+  {{ $folders := $block.content1.filters.folders }}
+  {{ $query = where $query "Section" "in" $folders }}
+  {{/* Init archive page to main folder */}}
+  {{ $main_folder := index $folders 0 }}
+  {{ $archive_page = site.GetPage "Section" $main_folder }}
+{{ end }}
+{{ if $block.content1.filters.tag }}
+  {{ $archive_page = site.GetPage (printf "tags/%s" (urlize $block.content1.filters.tag)) }}
+  {{ $query = $query | intersect $archive_page.Pages }}
+{{ end }}
+{{ if $block.content1.filters.category }}
+  {{ $archive_page = site.GetPage (printf "categories/%s" (urlize $block.content1.filters.category)) }}
+  {{ $query = $query | intersect $archive_page.Pages }}
+{{ end }}
+{{ if $block.content1.filters.publication_type }}
+  {{ $archive_page = site.GetPage (printf "publication_types/%s" $block.content1.filters.publication_type) }}
+  {{ $query = $query | intersect $archive_page.Pages }}
+{{ end }}
+{{ if $block.content1.filters.author }}
+  {{ $archive_page = site.GetPage (printf "authors/%s" (urlize $block.content1.filters.author)) }}
+  {{ $query = $query | intersect $archive_page.Pages }}
+{{ end }}
+{{ if $block.content1.filters.featured_only }}
+  {{ $query = where $query "Params.featured" "==" true }}
+{{ end }}
+{{ if $block.content1.filters.exclude_featured }}
+  {{ $query = where $query "Params.featured" "!=" true }}
+{{ end }}
+{{ if $block.content1.filters.exclude_past }}
+  {{ $query = where $query "Date" ">=" now }}
+{{ end }}
+{{ if $block.content1.filters.exclude_future }}
+  {{ $query1 = where $query "Date" "<" now }}
+{{ end }}
+
+{{ $count := len $query }}
+
+{{/* Sort */}}
+{{ $sort_by := $block.content1.sort_by | default "Date" }}
+{{ $sort_ascending := $block.content1.sort_ascending | default (eq $block.content1.order "asc") | default false }}
+{{ $sort_order := cond $sort_ascending "asc" "desc" }}
+{{ $query = sort $query $sort_by $sort_order }}
+
+{{/* Offset and Limit */}}
+{{ if gt $items_offset 0 }}
+  {{ $query = first $items_count (after $items_offset $query) }}
+{{ else }}
+  {{ $query = first $items_count $query }}
+{{ end }}
+
+
+
+<!-- QUERY BLOCK CONTENT PART 2 -->
+{{ $items_offset := $block.content2.offset | default 0 }}
+{{ $items_count := $block.content2.count }}
+{{ if eq $items_count 0 }}
+  {{ $items_count = 65535 }}
+{{ else }}
+  {{ $items_count = $items_count | default 5 }}
+{{ end }}
+
+{{/* Query */}}
+{{ $query2 := site.RegularPages }}
+{{ $archive_page := "" }}
+
+{{/* Filters */}}
+{{ if $block.content2.page_type }}
+  {{ $query2 = where $query2 "Type" $block.content2.page_type }}
+  {{ $archive_page = site.GetPage "Section" $block.content2.page_type }}
+{{ end }}
+{{ if $block.content2.filters.folders }}
+  {{ $folders := $block.content2.filters.folders }}
+  {{ $query2 = where $query2 "Section" "in" $folders }}
+  {{/* Init archive page to main folder */}}
+  {{ $main_folder := index $folders 0 }}
+  {{ $archive_page = site.GetPage "Section" $main_folder }}
+{{ end }}
+{{ if $block.content2.filters.tag }}
+  {{ $archive_page = site.GetPage (printf "tags/%s" (urlize $block.content2.filters.tag)) }}
+  {{ $query2 = $query2 | intersect $archive_page.Pages }}
+{{ end }}
+{{ if $block.content2.filters.category }}
+  {{ $archive_page = site.GetPage (printf "categories/%s" (urlize $block.content2.filters.category)) }}
+  {{ $query2 = $query2 | intersect $archive_page.Pages }}
+{{ end }}
+{{ if $block.content2.filters.publication_type }}
+  {{ $archive_page = site.GetPage (printf "publication_types/%s" $block.content2.filters.publication_type) }}
+  {{ $query2 = $query2 | intersect $archive_page.Pages }}
+{{ end }}
+{{ if $block.content2.filters.author }}
+  {{ $archive_page = site.GetPage (printf "authors/%s" (urlize $block.content2.filters.author)) }}
+  {{ $query2 = $query2 | intersect $archive_page.Pages }}
+{{ end }}
+{{ if $block.content2.filters.featured_only }}
+  {{ $query2 = where $query2 "Params.featured" "==" true }}
+{{ end }}
+{{ if $block.content2.filters.exclude_featured }}
+  {{ $query2 = where $query2 "Params.featured" "!=" true }}
+{{ end }}
+{{ if $block.content2.filters.exclude_past }}
+  {{ $query2 = where $query2 "Date" ">=" now }}
+{{ end }}
+{{ if $block.content2.filters.exclude_future }}
+  {{ $query2 = where $query2 "Date" "<" now }}
+{{ end }}
+
+{{ $count := len $query2 }}
+
+{{/* Sort */}}
+{{ $sort_by := $block.content2.sort_by | default "Date" }}
+{{ $sort_ascending := $block.content2.sort_ascending | default (eq $block.content2.order "asc") | default false }}
+{{ $sort_order := cond $sort_ascending "asc" "desc" }}
+{{ $query2 = sort $query2 $sort_by $sort_order }}
+
+{{/* Offset and Limit */}}
+{{ if gt $items_offset 0 }}
+  {{ $query2 = first $items_count (after $items_offset $query2) }}
+{{ else }}
+  {{ $query2 = first $items_count $query2 }}
+{{ end }}
+
+{{ $columns := $block.design.columns | default "2" }}
+
+<!-- code added manually start ... 
+  NB: for some reason, a custom block as exact duplicate of collection.html 
+  does NOT create the <div class="row">, nor the <div> for the first column to contain block title
+  => had to add these manually, copy/pasting the html code for the working "collection" blocks 
+-->
+<div class="row">
+  <div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+    {{ with $block.content1.title }}
+    <h1 class="mb-0">{{ . | markdownify }}</h1>
+    {{ end }}
+  </div>
+<!-- code added manually end ... -->
+
+<div class="col-12 {{if eq $columns "2"}}col-lg-8{{end}}">
+
+  <!-- BLOCK CONTENT PART 1 -->
+  {{ with $block.content1.text }}{{ . | emojify | markdownify }}{{ end }}
+
+  {{ range $index, $item := $query }}
+    {{ partial "functions/render_view" (dict "page" $block "item" . "view" ($block.design1.view | default "compact") "index" $index) }}
+  {{end}}
+
+  <!-- BLOCK CONTENT PART 2 -->
+  {{ with $block.content2.text }}{{ . | emojify | markdownify }}{{ end }}
+
+  {{ range $index, $item := $query2 }}
+    {{ partial "functions/render_view" (dict "page" $block "item" . "view" ($block.design2.view | default "compact") "index" $index) }}
+  {{end}}
+
+  {{/* Archive link */}}
+  {{ $show_archive_link := $block.content2.archive.enable | default (gt $count $items_count) }}
+  {{ if $show_archive_link | and $archive_page }}
+
+    {{ $archive_link := "" }}
+    {{ if $block.content2.archive.link }}
+      {{ $archive_link = $block.content2.archive.link | relLangURL }}
+    {{ else }}
+      {{ $archive_link = $archive_page.RelPermalink }}
+    {{ end }}
+
+    {{/* Localisation */}}
+    {{ $items_type := $archive_page.Type }}
+    {{ $i18n := "" }}
+    {{ if eq $items_type "post" }}
+      {{ $i18n = "more_posts" }}
+    {{ else if eq $items_type "event" }}
+      {{ $i18n = "more_talks" }}
+    {{ else if eq $items_type "publication" }}
+      {{ $i18n = "more_publications" }}
+    {{ else }}
+      {{ $i18n = "more_pages" }}
+    {{ end }}
+
+    {{ $archive_text := $block.content2.archive.text | default (i18n $i18n) | default "See all" }}
+
+    <div class="see-all">
+      <a href="{{ $archive_link }}">
+        {{ $archive_text | emojify }}
+        <i class="fas fa-angle-right"></i>
+      </a>
+    </div>
+  {{ end }}
+
+</div>
+</div>

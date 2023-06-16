@@ -18,21 +18,59 @@ sections:
       spacing:
         padding: ["2%", "5%", "20px", "2%"] # section spacing top, right, bottom, left
 
-  - block: collection
+  ## PUBLICATIONS v1 (without featured publications section)  
+  # - block: collection
+  #   id: publications
+  #   content:
+  #     title: Publications
+  #     text: <h2><b><u>All Publications</u>:</b><br><a href="./publication/" _target="_blank">View / filter all 34 academic publications</a></h2><br>
+  #       <h2><b><u>Latest Publications</u>:</b></h2>
+  #     filters:
+  #       folders:
+  #         - publication
+  #       exclude_featured: false
+  #   design:
+  #     columns: '2'
+  #     view: citation
+  #     spacing:
+  #       padding: ["20px", "5%", "20px", "2%"] # section spacing top, right, bottom, left
+
+  # PUBLICATIONS v2 (with featured publications section)  
+  - block: custom/collection-custom_publications
     id: publications
-    content:
+    # --- block part 1 = ALL + FEATURED publications
+    content1:
       title: Publications
       text: <h2><b><u>All Publications</u>:</b><br><a href="./publication/" _target="_blank">View / filter all 34 academic publications</a></h2><br>
-        <h2><b><u>Latest Publications</u>:</b></h2>
+        <h2><b><u>Featured Publications (top 5)</u>:</b></h2>
+      count: 5  #>> select how many publications to display
       filters:
         folders:
           - publication
-        exclude_featured: true
+        featured_only: true #>> select only publications where "featured: true"
+    design1:
+      view: custom/citation-publication-featured #>> use custom view where icon is changed to star
+    # --- block part 2 = LATEST publications
+    content2:
+      text: <br><h2><b><u>Latest Publications (last 5)</u>:</b></h2>
+      count: 5  #>> select how many publications to display
+      filters:
+        folders:
+          - publication
+        featured_only: false
+    design2:
+      view: citation #>> use default "citation" style
     design:
       columns: '2'
       view: citation
       spacing:
-        padding: ["20px", "5%", "20px", "2%"] # section spacing top, right, bottom, left
+        padding: ["20px", "5%", "20px", "2%"] #>> block spacing top, right, bottom, left
+    # --- customize the "See All" link: 
+    # content:
+    #   archive:
+    #     enable: true
+    #     text: See all blog posts
+    #     link: post/
 
   - block: collection
     id: talks
