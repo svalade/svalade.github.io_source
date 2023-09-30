@@ -55,10 +55,14 @@ education:
 # CUSTOM work position to show in About-custom widget
 work:
   positions:
-    - position: Associate Researcher/Professor
+    - position: Full Professor (Investigador Titular A)
       institution: 
         - UNAM (Mexico), [Dept. of Volcanology](http://vulcanologia.geofisica.unam.mx/)
-      year: since 2020
+      year: since 2023
+    - position: Associate Professor (Investigador Asociado C)
+      institution: 
+        - UNAM (Mexico), [Dept. of Volcanology](http://vulcanologia.geofisica.unam.mx/)
+      year: 2020-2023
     - position: PostDoc fellowship
       institution: 
         - TUB (Germany), [Dept. of Computer Vision & Remote Sensing](https://www.tu.berlin/en/cv)
@@ -118,5 +122,5 @@ email: ''
 highlight_name: true
 ---
 
-**Sébastien Valade** is Associate Professor in the [Department of Volcanology](http://vulcanologia.geofisica.unam.mx/) in the [Institute of Geophysics](https://www.geofisica.unam.mx/) at UNAM (Universidad Nacional Autónoma de México, Mexico City). He is the founder and developer of the volcano monitoring system MOUNTS (Monitoring Unrest from Space, [www.mounts-project.com](www.mounts-project.com)).
+**Sébastien Valade** is Full Professor (Investigador Titular A) in the [Department of Volcanology](http://vulcanologia.geofisica.unam.mx/) in the [Institute of Geophysics](https://www.geofisica.unam.mx/) at UNAM (Universidad Nacional Autónoma de México, Mexico City). He is the founder and developer of the volcano monitoring system MOUNTS (Monitoring Unrest from Space, [www.mounts-project.com](www.mounts-project.com)).
 {style="text-align: justify;"}
