@@ -124,3 +124,5 @@ highlight_name: true
 
 **Sébastien Valade** is Professor (Investigador Titular A) in the [Department of Volcanology](http://vulcanologia.geofisica.unam.mx/) in the [Institute of Geophysics](https://www.geofisica.unam.mx/) at UNAM (Universidad Nacional Autónoma de México, Mexico City). He is the founder and developer of the volcano monitoring system MOUNTS (Monitoring Unrest from Space, [www.mounts-project.com](www.mounts-project.com)).
 {style="text-align: justify;"}
+
+He is a member of the *Editorial Board* in the journal [*Communications Earth & Environment*](https://www.nature.com/commsenv/editorial-board) (Nature Portfolio).
