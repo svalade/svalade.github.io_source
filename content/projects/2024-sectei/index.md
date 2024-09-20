@@ -1,29 +1,24 @@
 ---
-title: "MOUNTS: Monitoring Unrest from Space"
-summary: Space-based volcano monitoring platform powered by Sentinel (-1, -2, -5P) and Deep Learning.
+title: "Infrasonic surveillance system for explosive eruptions at Popocatépetl"
+summary: Implementation of an infrasonic monitoring system at Popocatépetl, similar to that operating at Etna ([Ripepe et al. 2018](http://dx.doi.org/10.1029/2018JB015561)).
 tags:
   - Deep Learning
 authors:
   - admin
 role: <u>Principal Investigator</u> (PI)
-funding_source: '[Geo.X](https://www.geo-x.net/en/)'
+funding_source: '[SECTEI](https://www.sectei.cdmx.gob.mx/)'
 
 # Funding period (NB: date format forced in compact-project.html)
-date: 2017-04-01
-date_end: 2019-04-01 # parse '' to ignore
+date: 2024-09-01
+date_end: 2026-03-01 # parse '' to ignore
   
 # Optional external URL for project (replaces project detail page).
-external_link: 'http://mounts-project.com/about'
+# external_link: 'http://mounts-project.com/info_infrasound'
 
 image:
-  caption: MOUNTS
+  caption: infrasonic surveillance system
   focal_point: Smart
 
-links:
-  - icon: twitter
-    icon_pack: fab
-    name: Follow
-    url: https://twitter.com/MountsSystem
 url_code: ''
 url_pdf: ''
 url_slides: ''
