@@ -8,7 +8,9 @@ authors:
 role: <u>Principal Investigator</u> (PI)
 funding_source: '[Geo.X](https://www.geo-x.net/en/)'
 
-# Funding period (NB: date format forced in compact-project.html)
+# Funding period
+# NB1: date format forced in compact-project.html
+# NB2: if "date" is in the future, need to add metadata "publishDate" to today
 date: 2017-04-01
 date_end: 2019-04-01 # parse '' to ignore
   

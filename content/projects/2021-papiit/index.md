@@ -4,9 +4,11 @@ summary: Study of eruptive processes through the combined quantification of topo
 authors:
   - admin
 role: <u>Principal Investigator</u> (PI)
-funding_source: PAPIIT
+funding_source: 'UNAM DGAPA [PAPIIT](https://dgapa.unam.mx/index.php/impulso-a-la-investigacion/papiit) (IA102221)'
 
-# Funding period (NB: date format forced in compact-project.html)
+# Funding period
+# NB1: date format forced in compact-project.html
+# NB2: if "date" is in the future, need to add metadata "publishDate" to today
 date: 2021-01-01
 date_end: 2023-01-01  # parse '' to ignore
 

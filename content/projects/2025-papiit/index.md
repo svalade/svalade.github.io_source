@@ -1,29 +1,27 @@
 ---
-title: "MOUNTS-AI: artificial intelligence for volcano monitoring"
-summary: Deep Learning strategies in support of operational volcano monitoring.
+title: "OMEGA: Observatorio Mundial de Erupciones Guiado por Inteligencia Artificial"
+summary: Leverage cloud-based data and deep learning strategies to enhance the MOUNTS monitoring system into a global intelligent volcano observatory powered by AI.
+tags:
+  - Deep Learning
 authors:
   - admin
 role: <u>Principal Investigator</u> (PI)
-funding_source: '[Geo.X seed funding](https://www.geo-x.net/en/)'
+funding_source: 'UNAM DGAPA [PAPIIT](https://dgapa.unam.mx/index.php/impulso-a-la-investigacion/papiit) (IN114625)'
 
 # Funding period
 # NB1: date format forced in compact-project.html
 # NB2: if "date" is in the future, need to add metadata "publishDate" to today
-date: 2019-04-15
-date_end: 2019-10-14  # parse '' to ignore
-
+publishDate: 2024-10-10
+date: 2025-01-01
+date_end: 2028-01-01 # parse '' to ignore
+  
 # Optional external URL for project (replaces project detail page).
-external_link: ''
+# external_link: 'http://mounts-project.com/info_infrasound'
 
 image:
-  caption: MOUNTS + Deep Learning 
+  caption: infrasonic surveillance system
   focal_point: Smart
 
-links:
-  # - icon: twitter
-  #   icon_pack: fab
-  #   name: Follow
-  #   url: https://twitter.com/georgecushen
 url_code: ''
 url_pdf: ''
 url_slides: ''
@@ -36,7 +34,3 @@ url_video: ''
 #   Otherwise, set `slides = ""`.
 slides: ""
 ---
-
-<!-- Internal page content (disabled in compact-project.html) -->
-
-**Fundings: GEO-X Seed Funding**

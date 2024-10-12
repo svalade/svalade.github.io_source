@@ -8,7 +8,9 @@ authors:
 role: <u>Principal Investigator</u> (PI)
 funding_source: '[SECTEI](https://www.sectei.cdmx.gob.mx/)'
 
-# Funding period (NB: date format forced in compact-project.html)
+# Funding period
+# NB1: date format forced in compact-project.html
+# NB2: if "date" is in the future, need to add metadata "publishDate" to today
 date: 2024-09-01
 date_end: 2026-03-01 # parse '' to ignore
   

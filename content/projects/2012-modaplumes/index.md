@@ -6,7 +6,9 @@ authors:
 role: <u>Principal Investigator</u> (PI)
 funding_source: MEMOVOLC european young researcher travel grant 
 
-# Funding period (NB: date format forced in compact-project.html)
+# Funding period
+# NB1: date format forced in compact-project.html
+# NB2: if "date" is in the future, need to add metadata "publishDate" to today
 date: 2012-12-01
 date_end: '' # parse '' to ignore
 
