@@ -5,7 +5,7 @@ title: Automatic retrieval of volcanic SO2 emission source from TROPOMI products
 subtitle: ''
 summary: ''
 authors:
-- Balazs Markus
+- Balazs Markus*
 - Sébastien Valade
 - Manuel Wöllhaf
 - Olaf Hellwich

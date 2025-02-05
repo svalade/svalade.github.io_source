@@ -41,7 +41,7 @@ sections:
     # --- block part 1 = ALL + FEATURED publications
     content1:
       title: Publications
-      text: <h2><b><u>All Publications</u>:</b><br><a href="./publication/" _target="_blank">View / filter all 34 academic publications</a></h2><br>
+      text: <h2><b><u>All Publications</u>:</b><br><a href="./publication/" _target="_blank">View / filter all 36 academic publications</a></h2><br>
         <h2><b><u>Featured Publications (top 5)</u>:</b></h2>
       count: 5  #>> select how many publications to display
       filters:
@@ -52,7 +52,8 @@ sections:
       view: custom/citation-publication-featured #>> use custom view where icon is changed to star
     # --- block part 2 = LATEST publications
     content2:
-      text: <br><h2><b><u>Latest Publications (last 5)</u>:</b></h2>
+      text: | 
+        <br><h2><b><u>Latest Publications (last 5)</u>:</b></h2><i style="display: block; margin-bottom: 5px;">* articles written by students under the supervision of Sébastien Valade</i>
       count: 5  #>> select how many publications to display
       filters:
         folders:
